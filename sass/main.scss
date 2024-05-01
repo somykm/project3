@@ -32,11 +32,9 @@ header {
 
 .logo {
   display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: 'Shrikhand';
   height: 25px;
-  margin: 20px 0;
+  margin: 20px auto; //"auto" make logo appears in the middle
 }
 
 .location {
@@ -95,18 +93,63 @@ header {
     margin: 0 75px 50px 75px;
     box-shadow:
       inset 2px 2px 10px rgba(147, 86, 220, 0.2), inset -5px -8px 20px rgba(147, 86, 220, 0.7);
-  };
+  }
 }
-////////////Media Query for tablet/////////////////////////
-// @media (max-width: 992px)
-// {
 
-// }
+////////////Media Query for tablet/////////////////////////
+@media (max-width: 992px) {
+  body {
+    max-width: 992px;
+    min-width: 768px;
+  }
+
+  $font-size-table: 15px;
+
+  header {
+    box-shadow: none;
+  }
+
+  .location {
+    height: 32.25px;
+
+    &__name {
+      font-size: $font-size-table;
+    }
+  }
+
+  .explore {
+    height: 230px;
+
+    .booking {
+      padding: 0;
+      margin: 0 0 30px 0;
+      align-items: baseline;
+      font-size: 40px;
+      font-weight: 680;
+      box-sizing: border-box;
+    }
+
+    .discover-restaurants {
+      height: 30px;
+      text-align: center;
+      padding: 20px 0;
+      font-size: $font-size-table;
+      margin: 0;
+    }
+
+    &__restaurants {
+      height: 45px;
+      margin: 0 auto 10px auto;
+      padding: 0 25px;
+      font-size: $font-size-table;
+      box-shadow:
+        inset -2px -2px 10px rgba(147, 86, 220, 0.2),inset -5px -8px 20px rgba(147, 86, 220, 0.7);
+    }
+  }
+}
 
 ////////////Media Query for desktop/////////////////////////
 // @media screen (max-width:1024px)
 // {
-  
-// }
 
-  
+// }
