@@ -82,6 +82,23 @@ header {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.structure {
+  display: flex;
+  flex-direction: column;
+  height: 454.5px;
+  background-color: #99E2D0;
+}
+.structure .how-page-work {
+  display: flex;
+}
+.structure .chose-place {
+  border: 1px solid;
+  border-radius: 15px;
+  height: 65px;
+  margin: 0 25px;
+  text-align: center;
+}
+
 @media (min-width: 768px) {
   .location {
     height: 30px;
