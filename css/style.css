@@ -96,13 +96,13 @@ header {
     font-size: 12px;
   }
   .explore {
-    height: 230px;
+    height: 210px;
   }
   .explore .booking {
     font-weight: 680;
-    font-size: 24px;
+    font-size: 28px;
     padding: 0;
-    margin: 0 0 10px 0;
+    margin: 0 0 22px 0;
     box-sizing: border-box;
   }
   .explore .discover-restaurants {
@@ -110,14 +110,14 @@ header {
     text-align: center;
     padding: 20px 0;
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
   }
   .explore__restaurants {
     height: 45px;
     font-size: 17px;
     margin: 0 auto;
     padding: 0 20px;
-    font-size: 14px;
+    font-size: 13px;
   }
 }
 @media (min-width: 992px) {
