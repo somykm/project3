@@ -30,7 +30,7 @@ header {
 .location {
   display: flex;
   height: 55px;
-  background-color: #e0e0e0;
+  background-color: #e5e5e5;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
@@ -90,13 +90,18 @@ header {
 }
 .structure .how-page-work {
   display: flex;
+  margin-left: 20px;
 }
 .structure .chose-place {
   border: 1px solid;
   border-radius: 15px;
+  border-style: none;
+  background-color: #f2f2f2;
   height: 65px;
-  margin: 0 25px;
+  margin: 0 30px;
   text-align: center;
+  justify-content: space-evenly;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 768px) {
