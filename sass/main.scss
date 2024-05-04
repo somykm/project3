@@ -15,7 +15,35 @@ $color-gray: #f2f2f2;
 
 @mixin box-shadow {
   box-shadow:
-    5px 5px 5px rgba(0, 0, 0, 0.2);
+    5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+@mixin numbers-border-info {
+  border: 1px solid;
+  border-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 13px;
+  color: white;
+  background-color: $color-primary;
+}
+
+@mixin structure-three-sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+  border-style: none;
+  background-color: $color-gray;
+  height: 65px;
+  width: 80%;
+  margin: 0 30px;
+  margin-top: -30px;
+  padding-right: 15px;
+  // box-sizing: border-box;
+  @include box-shadow();
 }
 
 body {
@@ -100,27 +128,63 @@ header {
 .structure {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 454.5px;
-  background-color: #99E2D0;
 
   .how-page-work {
     display: flex;
     margin-left: 20px;
-
   }
 
-  .chose-place {
-    border: 1px solid;
-    border-radius: 15px;
-    border-style: none;
-    background-color: $color-gray;
-    height: 65px;
-    margin: 0 30px;
-    text-align: center;
-    justify-content: space-evenly;
-    @include box-shadow();
+  .chose-restaurant {
+    @include structure-three-sections();
+
+    .numbers {
+      @include numbers-border-info();
+      text-align: center;
+      margin-left: -10px;
+    }
+
+    &__icon {
+      padding: 0 20px;
     }
   }
+
+  .create-menu{
+    @include structure-three-sections();
+
+    .numbers{
+      @include numbers-border-info();
+      text-align: center;
+      margin-left: -10px;
+    }
+    &__icon{
+      padding: 0 20px;
+
+      &--fa-th-list{
+        background-color: none;
+        color: black;
+      }
+    }
+  }
+
+  .enjoy-it{
+    @include structure-three-sections();
+   
+    .numbers{
+      @include numbers-border-info();
+      text-align: center;
+      margin-left: -10px;
+    }
+    &__icon{
+      padding: 0 20px;
+    }
+  }
+  .differ--background-col{
+    background-color: lighten($color: $color-primary, $amount: 33%)
+  }
+}
+
 
 ////////////Media Query for tablet/////////////////////////
 @media (min-width:768px) {

@@ -79,29 +79,115 @@ header {
   border-radius: 30px;
   margin: 0 75px 50px 75px;
   background-image: linear-gradient(170deg, #ff79da, #9356DC);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .structure {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   height: 454.5px;
-  background-color: #99E2D0;
 }
 .structure .how-page-work {
   display: flex;
   margin-left: 20px;
 }
-.structure .chose-place {
+.structure .chose-restaurant {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   border: 1px solid;
-  border-radius: 15px;
+  border-radius: 20px;
   border-style: none;
   background-color: #f2f2f2;
   height: 65px;
+  width: 80%;
   margin: 0 30px;
+  margin-top: -30px;
+  padding-right: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.structure .chose-restaurant .numbers {
+  border: 1px solid;
+  border-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 13px;
+  color: white;
+  background-color: #9356DC;
   text-align: center;
-  justify-content: space-evenly;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  margin-left: -10px;
+}
+.structure .chose-restaurant__icon {
+  padding: 0 20px;
+}
+.structure .create-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #f2f2f2;
+  height: 65px;
+  width: 80%;
+  margin: 0 30px;
+  margin-top: -30px;
+  padding-right: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.structure .create-menu .numbers {
+  border: 1px solid;
+  border-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 13px;
+  color: white;
+  background-color: #9356DC;
+  text-align: center;
+  margin-left: -10px;
+}
+.structure .create-menu__icon {
+  padding: 0 20px;
+}
+.structure .create-menu__icon--fa-th-list {
+  background-color: none;
+  color: black;
+}
+.structure .enjoy-it {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+  border-style: none;
+  background-color: #f2f2f2;
+  height: 65px;
+  width: 80%;
+  margin: 0 30px;
+  margin-top: -30px;
+  padding-right: 15px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.structure .enjoy-it .numbers {
+  border: 1px solid;
+  border-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 13px;
+  color: white;
+  background-color: #9356DC;
+  text-align: center;
+  margin-left: -10px;
+}
+.structure .enjoy-it__icon {
+  padding: 0 20px;
+}
+.structure .differ--background-col {
+  background-color: #ece1f9;
 }
 
 @media (min-width: 768px) {
