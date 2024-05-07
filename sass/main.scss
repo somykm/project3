@@ -46,6 +46,20 @@ $color-gray: #f2f2f2;
   @include box-shadow();
 }
 
+@mixin structure-three-sections-desk {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+  border-style: none;
+  background-color: $color-gray;
+  height: 65px;
+  width: 300px;
+  padding-right: 20px;
+  @include box-shadow();
+}
+
 body {
   margin: 0;
 }
@@ -150,37 +164,40 @@ header {
     }
   }
 
-  .create-menu{
+  .create-menu {
     @include structure-three-sections();
 
-    .numbers{
+    .numbers {
       @include numbers-border-info();
       text-align: center;
       margin-left: -10px;
     }
-    &__icon{
+
+    &__icon {
       padding: 0 20px;
 
-      &--fa-th-list{
+      &--fa-th-list {
         background-color: none;
         color: black;
       }
     }
   }
 
-  .enjoy-it{
+  .enjoy-it {
     @include structure-three-sections();
-   
-    .numbers{
+
+    .numbers {
       @include numbers-border-info();
       text-align: center;
       margin-left: -10px;
     }
-    &__icon{
+
+    &__icon {
       padding: 0 20px;
     }
   }
-  .differ--background-col{
+
+  .differ--background-col {
     background-color: lighten($color: $color-primary, $amount: 33%)
   }
 }
@@ -273,6 +290,37 @@ header {
       margin: 0 auto 10px auto;
       padding: 0 25px;
       font-size: $font-size-table;
+    }
+  }
+
+
+  .structure {
+    flex-direction: row;
+    height: 230px;
+    align-items: flex-end;
+    margin: 0 140px;
+
+    .how-page-work {
+      position: static;
+      width: 100%;
+      height: fit-content;
+      margin-bottom: 180px;
+
+    }
+
+    .chose-restaurant {
+      @include structure-three-sections-desk();
+
+    }
+
+    .create-menu {
+      @include structure-three-sections-desk();
+
+    }
+
+    .enjoy-it {
+      @include structure-three-sections-desk();
+
     }
   }
 }
