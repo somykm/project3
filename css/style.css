@@ -8,6 +8,10 @@
   font-weight: 900;
 }
 
+.fa-heart {
+  color: gray;
+}
+
 body {
   margin: 0;
 }
@@ -16,7 +20,7 @@ header {
   display: flex;
   height: 62.5px;
   position: relative;
-  z-index: 10px;
+  z-index: 10;
 }
 
 .logo {
@@ -100,7 +104,7 @@ header {
   flex-direction: column;
   justify-content: space-evenly;
   height: 340.5px;
-  padding: 0 0 45px 0;
+  padding: 0 0 10px 0;
 }
 .structure .structure-three-sec .chose-restaurant {
   display: flex;
@@ -213,18 +217,25 @@ header {
   font-weight: 900;
   font-size: 24px;
 }
-.restaurant-section .card {
+.restaurant-section .restaurant-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.restaurant-section .restaurant-cards .card {
   display: block;
   margin: 0 20px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
-.restaurant-section img {
+.restaurant-section .restaurant-cards img {
   object-fit: cover;
   width: 100%;
   height: 136px;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-.restaurant-section .card-content {
+.restaurant-section .restaurant-cards .card-content {
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -235,18 +246,19 @@ header {
   border-bottom-left-radius: 20px;
   height: 68px;
   gap: -100px;
-  padding: 0 -20px 0 0;
+  padding: 0 -10px 0 0;
 }
-.restaurant-section .card-content .card-title {
-  padding-top: 0px;
+.restaurant-section .restaurant-cards .card-content .card-subtitle {
+  margin-top: -10px;
 }
-.restaurant-section .card-content .card-subtitle {
-  margin-top: 0px;
-}
-.restaurant-section .card-content .card-liking {
+.restaurant-section .restaurant-cards .card-content .card-liking {
   display: flex;
   justify-content: end;
-  margin-top: -50px;
+  margin-top: -60px;
+  padding-right: 20px;
+}
+.restaurant-section .restaurant-cards .card-content .card-liking:hover {
+  color: #9356DC;
 }
 
 @media (min-width: 768px) {
