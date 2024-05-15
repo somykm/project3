@@ -183,6 +183,7 @@ header {
         @include numbers-border-info();
         text-align: center;
         margin-left: -10px;
+        position: absolute;
       }
 
       &__icon {
@@ -232,15 +233,13 @@ header {
         display: flex;
         position: absolute;
         background-color: $color-tertiary;
-        width: 70px;
-        height: 30px;
+        width: 60px;
+        height: 25px;
         align-items: center;
         justify-content: center;
-        margin-left: 240px;
-
-        &__sec {
-          font-size: 15px;
-        }
+        left: 240px;
+        top: 10px;
+        font-size: 10px;
       }
 
       .favorite {
@@ -320,7 +319,6 @@ header {
 
   .footer-logo {
     display: flex;
-    font-family: 'Shrikhand';
     justify-content: flex-start;
     align-items: start;
     font-size: small;
@@ -393,11 +391,75 @@ header {
     }
   }
 
+  .restaurant-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px 60px 135px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+
+    .restaurant-title {
+      display: flex;
+      justify-content: flex-start;
+      margin: 20px 0 0 20px;
+      padding: 0px 0px 0px 0;
+    }
+
+    .restaurant-cards {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .card {
+        margin: 0 20px;
+        width: 40%;
+        height: 200px;
+        background-color: white;
+        text-decoration: none;
+        margin-top: 30px;
+        box-shadow: none;
+
+        img {
+          object-fit: cover;
+          height: 136px;
+        }
+      }
+    }
+
+    .card-content {
+      height: 0px;
+    }
+  }
+
+  /////////////////////footer//////////////////////
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 25px;
+    width: 100%;
+    height: 60px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    padding-right: 260px;
+
+    .footer-logo {
+      display: flex;
+      justify-content: end;
+      align-items: end;
+      position: absolute;
+      right: 50px;
+      margin-top: 20px;
+      height: 18px;
+      margin: 18px;
+    }
+  }
 }
 
 ////////////Media Query for desktop/////////////////////////
 @media (min-width: 992px) {
-
   $font-size-table: 15px;
 
   .location {
@@ -449,7 +511,6 @@ header {
       align-items: center;
       justify-content: center;
 
-
       .how-page-work {
         width: 100%;
         height: 40px;
@@ -466,40 +527,41 @@ header {
   .restaurant-section {
     display: flex;
     flex-direction: column;
-    padding: 0 60px 0 135px;
+    padding: 0 60px 60px 135px;
     box-sizing: border-box;
-    height: 500px;
+    padding-bottom: 30px;
 
     .restaurant-title {
       display: flex;
-      justify-content: row;
       justify-content: flex-start;
-      padding: 20px 0 0 145px;
+      margin: 20px 0 0 20px;
+      padding: 0px 0px 0px 0;
     }
+
     .restaurant-cards {
       display: flex;
       flex-direction: row;
-      justify-content:space-around;
       align-items: center;
       flex-wrap: wrap;
-      height: 500px;
-      gap: 20px;
 
-  
       .card {
         margin: 0 20px;
-        width: 350px;
+        width: 40%;
         height: 200px;
         background-color: white;
         text-decoration: none;
-        
+        margin-top: 30px;
+        box-shadow: none;
+
         img {
-          // object-fit: cover;
-          width: 350px;
+          object-fit: cover;
           height: 136px;
-          
         }
       }
+    }
+
+    .card-content {
+      height: 0px;
     }
   }
 
@@ -507,18 +569,24 @@ header {
   .footer-section {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: end;
+    align-items: end;
+    gap: 25px;
     width: 100%;
     height: 60px;
-    padding-top: 8px;
-    padding-left: 20px;
+    padding-bottom: 10px;
     box-sizing: border-box;
+    padding-right: 260px;
 
-    .footer-icon ::before {
-      width: 18px;
-      height: 18px;
+    .footer-logo {
+      display: flex;
+      justify-content: end;
+      align-items: end;
       position: absolute;
-      left: 0;
+      right: 50px;
+      margin-top: 20px;
+      height: 18px;
+      margin: 18px;
     }
   }
 }

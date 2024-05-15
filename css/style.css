@@ -188,6 +188,7 @@ header {
   background-color: #9356DC;
   text-align: center;
   margin-left: -10px;
+  position: absolute;
 }
 .structure .structure-three-sec .enjoy-it__icon {
   padding: 0 20px;
@@ -230,14 +231,13 @@ header {
   display: flex;
   position: absolute;
   background-color: #99E2D0;
-  width: 70px;
-  height: 30px;
+  width: 60px;
+  height: 25px;
   align-items: center;
   justify-content: center;
-  margin-left: 240px;
-}
-.restaurant-section .restaurant-cards .card .new__sec {
-  font-size: 15px;
+  left: 240px;
+  top: 10px;
+  font-size: 10px;
 }
 .restaurant-section .restaurant-cards .card .favorite {
   position: absolute;
@@ -303,7 +303,6 @@ header {
 }
 .footer-section .footer-logo {
   display: flex;
-  font-family: "Shrikhand";
   justify-content: flex-start;
   align-items: start;
   font-size: small;
@@ -362,6 +361,63 @@ header {
     margin: 0 auto;
     padding: 0 20px;
     font-size: 13px;
+  }
+  .restaurant-section {
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px 60px 135px;
+    box-sizing: border-box;
+    padding-bottom: 30px;
+  }
+  .restaurant-section .restaurant-title {
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px 0 0 20px;
+    padding: 0px 0px 0px 0;
+  }
+  .restaurant-section .restaurant-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .restaurant-section .restaurant-cards .card {
+    margin: 0 20px;
+    width: 40%;
+    height: 200px;
+    background-color: white;
+    text-decoration: none;
+    margin-top: 30px;
+    box-shadow: none;
+  }
+  .restaurant-section .restaurant-cards .card img {
+    object-fit: cover;
+    height: 136px;
+  }
+  .restaurant-section .card-content {
+    height: 0px;
+  }
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: end;
+    gap: 25px;
+    width: 100%;
+    height: 60px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    padding-right: 260px;
+  }
+  .footer-section .footer-logo {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    position: absolute;
+    right: 50px;
+    margin-top: 20px;
+    height: 18px;
+    margin: 18px;
   }
 }
 @media (min-width: 992px) {
@@ -431,51 +487,59 @@ header {
   .restaurant-section {
     display: flex;
     flex-direction: column;
-    padding: 0 60px 0 135px;
+    padding: 0 60px 60px 135px;
     box-sizing: border-box;
-    height: 500px;
+    padding-bottom: 30px;
   }
   .restaurant-section .restaurant-title {
     display: flex;
-    justify-content: row;
     justify-content: flex-start;
-    padding: 20px 0 0 145px;
+    margin: 20px 0 0 20px;
+    padding: 0px 0px 0px 0;
   }
   .restaurant-section .restaurant-cards {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    height: 500px;
-    gap: 20px;
   }
   .restaurant-section .restaurant-cards .card {
     margin: 0 20px;
-    width: 350px;
+    width: 40%;
     height: 200px;
     background-color: white;
     text-decoration: none;
+    margin-top: 30px;
+    box-shadow: none;
   }
   .restaurant-section .restaurant-cards .card img {
-    width: 350px;
+    object-fit: cover;
     height: 136px;
+  }
+  .restaurant-section .card-content {
+    height: 0px;
   }
   .footer-section {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    justify-content: end;
+    align-items: end;
+    gap: 25px;
     width: 100%;
     height: 60px;
-    padding-top: 8px;
-    padding-left: 20px;
+    padding-bottom: 10px;
     box-sizing: border-box;
+    padding-right: 260px;
   }
-  .footer-section .footer-icon ::before {
-    width: 18px;
-    height: 18px;
+  .footer-section .footer-logo {
+    display: flex;
+    justify-content: end;
+    align-items: end;
     position: absolute;
-    left: 0;
+    right: 50px;
+    margin-top: 20px;
+    height: 18px;
+    margin: 18px;
   }
 }
 
