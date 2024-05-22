@@ -4,7 +4,7 @@
   "description": "This is the code for project 3.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css --style expanded"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css:./sass/fullPalette.scss --style expanded"
   },
   "author": "",
   "license": "ISC",

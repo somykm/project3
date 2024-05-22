@@ -1,4 +1,5 @@
-@import "./utils/variables";
+@import '../utils/function';
+
 * {
   font-size: medium;
   font-family: 'Roboto';
@@ -240,7 +241,7 @@ header {
         color: darken($color-tertiary, 40%);
 
         @media (min-width:768px) {
-        
+
           // height: 18px;
         }
       }
@@ -310,11 +311,13 @@ header {
 
 /////////////////////footer//////////////////////
 @mixin footer-for-mobile {
-  .footer-logo {
+  .page-name {
     display: flex;
+    font-family: 'Shrikhand';
     justify-content: end;
     align-items: end;
-    font-size: small;
+    font-size: large;
+    font-weight: 900;
     width: 100px;
     height: 50px;
     //to change logo's color to white
@@ -332,7 +335,7 @@ header {
     height: 18px;
   }
 
-  
+
   .footer-link i {
     color: white;
   }
@@ -455,9 +458,9 @@ header {
     box-sizing: border-box;
     padding-right: 260px;
 
-    .footer-logo {
+    .page-name {
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
       align-items: end;
       margin-top: 20px;
       height: 18px;
@@ -587,13 +590,14 @@ header {
     box-sizing: border-box;
     padding-right: 260px;
 
-    .footer-logo {
+    .page-name {
       display: flex;
       justify-content: end;
       align-items: end;
       position: absolute;
       right: 50px;
-      margin-top: 20px;
+      padding-top: 10px;
+      margin-top: 3px;
       height: 18px;
       margin: 18px;
     }
