@@ -1,14 +1,9 @@
+@import "./utils/variables";
 * {
   font-size: medium;
   font-family: 'Roboto';
   color: black;
 }
-
-$color-primary: #9356DC;
-$color-secondary: #ff79da;
-$color-tertiary: #99E2D0;
-$color-gray: #f2f2f2;
-$color-footer: black;
 
 @mixin box-shadow {
   box-shadow:
@@ -232,14 +227,22 @@ header {
       .new {
         display: flex;
         position: absolute;
+        top: 10px;
+        right: 10px;
+        width: 100%;
         background-color: $color-tertiary;
-        width: 60px;
+        width: 70px;
         height: 25px;
         align-items: center;
         justify-content: center;
-        left: 240px;
-        top: 10px;
-        font-size: 10px;
+        font-size: 13px;
+        font-weight: 900;
+        color: darken($color-tertiary, 40%);
+
+        @media (min-width:768px) {
+        
+          // height: 18px;
+        }
       }
 
       .favorite {
@@ -306,6 +309,35 @@ header {
 
 
 /////////////////////footer//////////////////////
+@mixin footer-for-mobile {
+  .footer-logo {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: small;
+    width: 100px;
+    height: 50px;
+    //to change logo's color to white
+    filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(0deg) brightness(108%) contrast(108%);
+  }
+
+  .footer-text {
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .footer-icon ::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  
+  .footer-link i {
+    color: white;
+  }
+}
+
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -316,33 +348,11 @@ header {
   padding-top: 8px;
   padding-left: 20px;
   box-sizing: border-box;
+  @include footer-for-mobile();
+}
 
-  .footer-logo {
-    display: flex;
-    justify-content: flex-start;
-    align-items: start;
-    font-size: small;
-    height: 20px;
-    margin: 20px;
-    color: white;
-  }
-
-  .footer-text {
-    color: white;
-    font-size: 14px;
-  }
-
-  .footer-icon ::before {
-    width: 18px;
-    height: 18px;
-    position: absolute;
-    left: 0;
-  }
-
-  .fa-utensils,
-  .fa-handshake {
-    color: white;
-  }
+.footer-link {
+  white-space: nowrap;
 }
 
 ////////////Media Query for tablet/////////////////////////
@@ -449,8 +459,6 @@ header {
       display: flex;
       justify-content: end;
       align-items: end;
-      position: absolute;
-      right: 50px;
       margin-top: 20px;
       height: 18px;
       margin: 18px;
@@ -506,6 +514,7 @@ header {
     .structure-three-sec {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       width: 100%;
       height: 180px;
       align-items: center;
