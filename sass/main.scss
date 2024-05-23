@@ -1,10 +1,15 @@
-@import '../utils/function';
-
 * {
   font-size: medium;
   font-family: 'Roboto';
-  color: black;
+  // color: black;
+  color: white;
 }
+
+$color-primary: #9356DC;
+$color-secondary: #ff79da;
+$color-tertiary: #99E2D0;
+$color-gray: #f2f2f2;
+$color-footer: black;
 
 @mixin box-shadow {
   box-shadow:
@@ -334,7 +339,6 @@ header {
     width: 18px;
     height: 18px;
   }
-
 
   .footer-link i {
     color: white;
