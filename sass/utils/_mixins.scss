@@ -1,0 +1,72 @@
+@mixin box-shadow {
+  box-shadow:
+    5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+@mixin numbers-border-info {
+  border: 1px solid;
+  border-style: none;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  font-size: 13px;
+  color: white;
+  background-color: $color-primary;
+}
+
+@mixin structure-three-sections {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 20px;
+  border-style: none;
+  background-color: $color-gray;
+  height: 68px;
+  width: 80%;
+  margin: 0 30px;
+  margin-top: -30px;
+  padding-right: 15px;
+  @include box-shadow();
+
+  @media(min-width: 992px) {
+    width: 33.3%;
+  }
+}
+
+@mixin footer-for-mobile {
+  .page-name {
+    display: flex;
+    font-family: 'Shrikhand';
+    font-size: large;
+    font-weight: 700;
+    color: white;
+    padding: 10px 0 10px 0;
+
+    //to change logo's color to white
+    // filter: invert(100%) sepia(6%) saturate(0%) hue-rotate(0deg) brightness(108%) contrast(108%);
+    @media (min-width:768px) {
+      display: flex;
+      justify-content: end;
+      position: absolute;
+      right: 40px;
+      padding: 25px 0 0 0;
+    }
+  }
+
+  .footer-text {
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .footer-icon ::before {
+    width: 18px;
+    height: 18px;
+  }
+
+  .footer-link i {
+    color: white;
+  }
+}
