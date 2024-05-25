@@ -127,6 +127,7 @@ header {
 }
 .structure .structure-three-sec .chose-restaurant__icon {
   padding: 0 20px;
+  color: gray;
 }
 .structure .structure-three-sec .create-menu {
   display: flex;
@@ -157,10 +158,7 @@ header {
 }
 .structure .structure-three-sec .create-menu__icon {
   padding: 0 20px;
-}
-.structure .structure-three-sec .create-menu__icon--fa-th-list {
-  background-color: none;
-  color: black;
+  color: gray;
 }
 .structure .structure-three-sec .enjoy-it {
   display: flex;
@@ -191,6 +189,7 @@ header {
 }
 .structure .structure-three-sec .enjoy-it__icon {
   padding: 0 20px;
+  color: #9356DC;
 }
 .structure .structure-three-sec .differ--background-col {
   background-color: #ece1f9;

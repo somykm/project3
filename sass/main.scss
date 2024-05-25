@@ -153,6 +153,7 @@ header {
 
       &__icon {
         padding: 0 20px;
+        color: gray;
       }
     }
 
@@ -167,11 +168,7 @@ header {
 
       &__icon {
         padding: 0 20px;
-
-        &--fa-th-list {
-          background-color: none;
-          color: black;
-        }
+        color: gray;
       }
     }
 
@@ -186,6 +183,7 @@ header {
 
       &__icon {
         padding: 0 20px;
+        color: $color-primary;
       }
     }
 
