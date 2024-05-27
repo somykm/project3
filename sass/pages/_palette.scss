@@ -16,32 +16,63 @@
 
 .bastille-content {
   display: flex;
+  flex-direction: column;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: $color-gray;
+
   h1 {
     display: flex;
     flex-direction: row;
     position: static;
     padding: 20px 0 0 20px;
-    font-size:x-large;
+    font-size: x-large;
     font-weight: 900;
     font-family: 'Shrikhand';
   }
 
   .palette-favorite {
-    // position: absolute;
-    // right: 30px;
-    // bottom: 30px;
-    // padding: 0 8px 16px 0;
-    // height: 0px;
+    @include favorite-heart;
+    position: absolute;
+    top: 280px;
+    right: 40px;
+    height: 0px;
   }
 
-  .entrees{
+  .entrees {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
     padding: 0 0 0 20px;
+    border-bottom: 2px solid $color-tertiary;
+    width: 50px;
+
+  }
+
+  .entrees-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .option1 {
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      height: 100px;
+      border: 1px solid;
+      border-style: none;
+      border-radius: 20px;
+      background-color: white;
+
+      h3 {
+        padding-left: 10px;
+      }
+
+      .ingridiant {
+        padding-left: 10px;
+        padding-bottom: 40px;
+      }
+    }
   }
 }
 

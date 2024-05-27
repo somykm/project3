@@ -15,6 +15,7 @@
 
 .bastille-content {
   display: flex;
+  flex-direction: column;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #f2f2f2;
@@ -28,11 +29,65 @@
   font-weight: 900;
   font-family: "Shrikhand";
 }
+.bastille-content .palette-favorite {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  padding: 0 8px 16px 0;
+  height: 0px;
+  position: absolute;
+  top: 280px;
+  right: 40px;
+  height: 0px;
+}
+.bastille-content .palette-favorite .empty-heart {
+  color: gray;
+  font-size: 20px;
+}
+.bastille-content .palette-favorite .full-heart {
+  opacity: 0;
+  transition: opacity 0.5s;
+  font-size: 20px;
+}
+.bastille-content .palette-favorite:hover .full-heart {
+  opacity: 1;
+}
+.bastille-content .palette-favorite i {
+  position: absolute;
+  background-image: linear-gradient(170deg, #ff79da, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
 .bastille-content .entrees {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 0 0 0 20px;
+  border-bottom: 2px solid #99E2D0;
+  width: 50px;
+}
+.bastille-content .entrees-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bastille-content .entrees-cards .option1 {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 100px;
+  border: 1px solid;
+  border-style: none;
+  border-radius: 20px;
+  background-color: white;
+}
+.bastille-content .entrees-cards .option1 h3 {
+  padding-left: 10px;
+}
+.bastille-content .entrees-cards .option1 .ingridiant {
+  padding-left: 10px;
+  padding-bottom: 40px;
 }
 
 .order-section {
