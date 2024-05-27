@@ -49,7 +49,6 @@
     @media (min-width:768px) {
       display: flex;
       justify-content: end;
-      position: absolute;
       right: 40px;
       padding: 25px 0 0 0;
     }
@@ -68,5 +67,36 @@
 
   .footer-link i {
     color: white;
+  }
+}
+
+@mixin favorite-heart {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  padding: 0 8px 16px 0;
+  height: 0px;
+
+  .empty-heart {
+    color: gray;
+    font-size: 20px;
+  }
+
+  .full-heart {
+    opacity: 0;
+    transition: opacity .5s;
+    font-size: 20px;
+  }
+
+  &:hover .full-heart {
+    opacity: 1;
+  }
+
+  i {
+    position: absolute;
+    background-image: linear-gradient(170deg, $color-secondary, $color-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
