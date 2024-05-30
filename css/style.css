@@ -1,26 +1,28 @@
+.fa-check {
+  color: #99E2D0;
+}
+
 .pointer a {
   display: flex;
   align-items: center;
-  position: absolute;
-  right: 400px;
+  right: 300px;
   top: 20px;
 }
 
-.palette-card {
+.palette-card img {
   display: flex;
-  object-fit: contain;
-  width: 300px;
+  width: 100%;
   height: 180px;
 }
 
-.bastille-content {
+.entrees-content {
   display: flex;
   flex-direction: column;
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #f2f2f2;
 }
-.bastille-content h1 {
+.entrees-content h1 {
   display: flex;
   flex-direction: row;
   position: static;
@@ -29,7 +31,7 @@
   font-weight: 900;
   font-family: "Shrikhand";
 }
-.bastille-content .palette-favorite {
+.entrees-content .palette-favorite {
   position: absolute;
   right: 30px;
   bottom: 30px;
@@ -40,54 +42,116 @@
   right: 40px;
   height: 0px;
 }
-.bastille-content .palette-favorite .empty-heart {
+.entrees-content .palette-favorite .empty-heart {
   color: gray;
   font-size: 20px;
 }
-.bastille-content .palette-favorite .full-heart {
+.entrees-content .palette-favorite .full-heart {
   opacity: 0;
   transition: opacity 0.5s;
   font-size: 20px;
 }
-.bastille-content .palette-favorite:hover .full-heart {
+.entrees-content .palette-favorite:hover .full-heart {
   opacity: 1;
 }
-.bastille-content .palette-favorite i {
+.entrees-content .palette-favorite i {
   position: absolute;
   background-image: linear-gradient(170deg, #ff79da, #9356DC);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
-.bastille-content .entrees {
+.entrees-content .entrees {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0 0 0 20px;
-  border-bottom: 2px solid #99E2D0;
-  width: 50px;
+  padding: 0 0 4px 0;
+  border-bottom: 3px solid #99E2D0;
+  width: 40px;
+  margin-left: 20px;
 }
-.bastille-content .entrees-cards {
+.entrees-content .entrees-cards {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
-.bastille-content .entrees-cards .option1 {
+.entrees-content .entrees-cards .card-content {
   display: flex;
   flex-direction: column;
-  width: 90%;
-  height: 100px;
+  width: 94%;
+  height: 70px;
   border: 1px solid;
   border-style: none;
   border-radius: 20px;
   background-color: white;
+  flex-wrap: wrap;
+  position: relative;
+  transition: 0.2s;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
-.bastille-content .entrees-cards .option1 h3 {
+.entrees-content .entrees-cards .card-content h3 {
   padding-left: 10px;
 }
-.bastille-content .entrees-cards .option1 .ingridiant {
-  padding-left: 10px;
-  padding-bottom: 40px;
+.entrees-content .entrees-cards .card-content .ingridiant {
+  padding: 0 0 0px 10px;
+  margin: 40px 0 0px 0;
+  position: absolute;
+}
+.entrees-content .entrees-cards .card-content .btn-price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 70px;
+  margin: 20px auto;
+}
+.entrees-content .entrees-cards .card-content .btn-price .price {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0 0 0px 0;
+  font-weight: bold;
+  position: static;
+  transition: 0.3s;
+}
+.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border: 1px solid;
+  border-style: none;
+  background-color: #99E2D0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: relative;
+  right: -250px;
+  transition: 0.3s;
+}
+.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  border: 1px solid;
+  border-style: none;
+  background-color: white;
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  margin-left: -130px;
+}
+.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck__icon .card-content:hover .btn-check-marck {
+  right: -130px;
+}
+.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck .card-content:hover .price {
+  margin-right: 63px;
+}
+.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck .card-content:hover .price .card-content:hover {
+  box-shadow: 0px 5px 6px tgba(0, 0, 0, 0.3);
 }
 
 .order-section {
@@ -95,7 +159,8 @@
   justify-content: center;
   flex-direction: column;
   background-color: #f2f2f2;
-  height: 292px;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 .order-section .order {
   display: flex;
