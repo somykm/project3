@@ -9,10 +9,6 @@ nav {
   left: 30px;
   position: absolute;
 }
-nav .pointer {
-  text-decoration: underline;
-}
-
 .palette-card img {
   display: flex;
   width: 100%;

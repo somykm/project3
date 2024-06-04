@@ -3,14 +3,10 @@
 }
 
 nav {
-  display: flexbox;
-  top: 20px;
-  bottom: 20px;
-  left: 30px;
-  position: absolute;
+  @include nav-pointer;
 
   .pointer {
-    text-decoration: underline;
+    
   }
 }
 
@@ -30,14 +26,7 @@ nav {
   margin-bottom: -10px;
 
   h1 {
-    display: flex;
-    flex-direction: row;
-    position: static;
-    padding: 20px 0 0 20px;
-    font-size: x-large;
-    font-weight: 900;
-    font-family: 'Shrikhand';
-    margin-bottom: -20px;
+    @include header-title;
   }
 
   .palette-favorite {
@@ -58,14 +47,7 @@ nav {
   }
 
   hr {
-    width: 40px;
-    text-align: left;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-top: -5px;
-    border-width: 1.5px;
-    border-color: $color-tertiary;
-    border-style: solid;
+    @include mini-line;
   }
 
   .entrees-cards {
@@ -158,17 +140,7 @@ nav {
   padding-bottom: 30px;
 
   .order {
-    display: flex;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-secondary;
-    border: 0;
-    font-size: 17px;
-    text-align: center;
-    color: #fff;
-    border-radius: 30px;
-    margin: 0 75px 50px 75px;
+    @include order-button;
     background-image: linear-gradient(170deg, $color-secondary, $color-primary);
     @include box-shadow();
   }
