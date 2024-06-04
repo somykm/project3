@@ -2,18 +2,23 @@
   color: $color-tertiary;
 }
 
-.pointer a {
-  display: flex;
-  align-items: center;
-
-  right: 300px;
+nav {
+  display: flexbox;
   top: 20px;
+  bottom: 20px;
+  left: 30px;
+  position: absolute;
+
+  .pointer {
+    text-decoration: underline;
+  }
 }
 
 .palette-card img {
   display: flex;
   width: 100%;
   height: 180px;
+  object-fit: cover;
 }
 
 .entrees-content {
@@ -22,6 +27,7 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: $color-gray;
+  margin-bottom: -10px;
 
   h1 {
     display: flex;
@@ -31,6 +37,7 @@
     font-size: x-large;
     font-weight: 900;
     font-family: 'Shrikhand';
+    margin-bottom: -20px;
   }
 
   .palette-favorite {
@@ -45,16 +52,21 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 0 0 4px 0;
-    border-bottom: 3px solid $color-tertiary;
-    width: 40px;
+    width: 90px;
     margin-left: 20px;
+    padding-top: 30px;
   }
 
-  // hr {
-  //   color: $color-tertiary ;
-  //   width: 40px;
-  // }
+  hr {
+    width: 40px;
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    border-width: 1.5px;
+    border-color: $color-tertiary;
+    border-style: solid;
+  }
 
   .entrees-cards {
     display: flex;
@@ -63,89 +75,73 @@
     flex-direction: column;
     gap: 20px;
 
-    .card-content {
-      display: flex;
-      flex-direction: column;
+    .menu-card {
+
       width: 94%;
       height: 70px;
-      border: 1px solid;
-      border-style: none;
       border-radius: 20px;
       background-color: white;
-      flex-wrap: wrap;
-      position: relative;
-      transition: .2s;
       box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
 
-      h3 {
-        padding-left: 10px;
+      &:hover {
+        .card-content {
+          width: 100%;
+        }
       }
 
-      .ingridiant {
-        padding: 0 0 0px 10px;
-        margin: 40px 0 0px 0;
-        position: absolute;
-      }
-
-      .btn-price {
+      .card-content {
+        height: 100%;
+        width: calc(100% + 70px);
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 150px;
-        height: 70px;
-        margin: 20px auto;
 
-        .price {
+        .card-text {
           display: flex;
-          justify-content: flex-end;
-          align-items: flex-end;
-          padding: 0 0 0px 0;
-          font-weight: bold;
-          position: static;
-          transition: 0.3s;
+          flex-direction: column;
+
+          height: 100%;
+          flex: fit-content;
+          padding: 10px 0 10px 10px;
+
+          h3 {
+            margin: 0;
+          }
+
+          .ingridiant {
+            margin-top: 8px;
+          }
         }
 
-        .btn-check-marck {
+        .btn-price {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          align-items: center;
+          width: 70px;
+          height: 100%;
+
+          .price {
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
+        }
+
+        .btn-check-mark {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 70px;
           height: 70px;
-          border: 1px solid;
-          border-style: none;
           background-color: $color-tertiary;
-          border-top-right-radius: 20px;
-          border-bottom-right-radius: 20px;
-
-          position: relative;
-          right: -250px;
-          transition: .3s;
 
           &__icon {
             display: flex;
             justify-content: center;
             align-items: center;
-            border-radius: 25px;
-            border: 1px solid;
-            border-style: none;
+            border-radius: 50%;
             background-color: white;
             width: 20px;
             height: 20px;
-            position: fixed;
-            margin-left: -130px;
-
-            .card-content:hover .btn-check-marck {
-              right: -130px;
-            }
-
-          }
-
-          .card-content:hover .price {
-            margin-right: 63px;
-
-            .card-content:hover {
-              box-shadow: 0px 5px 6px tgba(0, 0, 0, 0.3);
-            }
           }
         }
       }

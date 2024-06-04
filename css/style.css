@@ -2,17 +2,22 @@
   color: #99E2D0;
 }
 
-.pointer a {
-  display: flex;
-  align-items: center;
-  right: 300px;
+nav {
+  display: flexbox;
   top: 20px;
+  bottom: 20px;
+  left: 30px;
+  position: absolute;
+}
+nav .pointer {
+  text-decoration: underline;
 }
 
 .palette-card img {
   display: flex;
   width: 100%;
   height: 180px;
+  object-fit: cover;
 }
 
 .entrees-content {
@@ -21,6 +26,7 @@
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #f2f2f2;
+  margin-bottom: -10px;
 }
 .entrees-content h1 {
   display: flex;
@@ -30,6 +36,7 @@
   font-size: x-large;
   font-weight: 900;
   font-family: "Shrikhand";
+  margin-bottom: -20px;
 }
 .entrees-content .palette-favorite {
   position: absolute;
@@ -65,10 +72,19 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 0 0 4px 0;
-  border-bottom: 3px solid #99E2D0;
-  width: 40px;
+  width: 90px;
   margin-left: 20px;
+  padding-top: 30px;
+}
+.entrees-content hr {
+  width: 40px;
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  margin-top: -5px;
+  border-width: 1.5px;
+  border-color: #99E2D0;
+  border-style: solid;
 }
 .entrees-content .entrees-cards {
   display: flex;
@@ -77,81 +93,63 @@
   flex-direction: column;
   gap: 20px;
 }
-.entrees-content .entrees-cards .card-content {
-  display: flex;
-  flex-direction: column;
+.entrees-content .entrees-cards .menu-card {
   width: 94%;
   height: 70px;
-  border: 1px solid;
-  border-style: none;
   border-radius: 20px;
   background-color: white;
-  flex-wrap: wrap;
-  position: relative;
-  transition: 0.2s;
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
-.entrees-content .entrees-cards .card-content h3 {
-  padding-left: 10px;
+.entrees-content .entrees-cards .menu-card:hover .card-content {
+  width: 100%;
 }
-.entrees-content .entrees-cards .card-content .ingridiant {
-  padding: 0 0 0px 10px;
-  margin: 40px 0 0px 0;
-  position: absolute;
-}
-.entrees-content .entrees-cards .card-content .btn-price {
+.entrees-content .entrees-cards .menu-card .card-content {
+  height: 100%;
+  width: calc(100% + 70px);
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 70px;
-  margin: 20px auto;
 }
-.entrees-content .entrees-cards .card-content .btn-price .price {
+.entrees-content .entrees-cards .menu-card .card-content .card-text {
   display: flex;
+  flex-direction: column;
+  height: 100%;
+  flex: fit-content;
+  padding: 10px 0 10px 10px;
+}
+.entrees-content .entrees-cards .menu-card .card-content .card-text h3 {
+  margin: 0;
+}
+.entrees-content .entrees-cards .menu-card .card-content .card-text .ingridiant {
+  margin-top: 8px;
+}
+.entrees-content .entrees-cards .menu-card .card-content .btn-price {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-end;
-  align-items: flex-end;
-  padding: 0 0 0px 0;
-  font-weight: bold;
-  position: static;
-  transition: 0.3s;
+  align-items: center;
+  width: 70px;
+  height: 100%;
 }
-.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck {
+.entrees-content .entrees-cards .menu-card .card-content .btn-price .price {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.entrees-content .entrees-cards .menu-card .card-content .btn-check-mark {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70px;
   height: 70px;
-  border: 1px solid;
-  border-style: none;
   background-color: #99E2D0;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-  position: relative;
-  right: -250px;
-  transition: 0.3s;
 }
-.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck__icon {
+.entrees-content .entrees-cards .menu-card .card-content .btn-check-mark__icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 25px;
-  border: 1px solid;
-  border-style: none;
+  border-radius: 50%;
   background-color: white;
   width: 20px;
   height: 20px;
-  position: fixed;
-  margin-left: -130px;
-}
-.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck__icon .card-content:hover .btn-check-marck {
-  right: -130px;
-}
-.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck .card-content:hover .price {
-  margin-right: 63px;
-}
-.entrees-content .entrees-cards .card-content .btn-price .btn-check-marck .card-content:hover .price .card-content:hover {
-  box-shadow: 0px 5px 6px tgba(0, 0, 0, 0.3);
 }
 
 .order-section {
@@ -455,6 +453,16 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+@keyframes spin {
+  0% {
+    transform: scaleX(0);
+    opacity: 0.1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }
 .restaurant-section .restaurant-cards .card {
   display: block;
