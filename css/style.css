@@ -2,6 +2,15 @@
   color: #99E2D0;
 }
 
+@media (min-width: 992px) {
+  .entrees-back {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 nav {
   display: flexbox;
   top: 20px;
@@ -22,7 +31,14 @@ nav {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: #f2f2f2;
-  margin-bottom: -10px;
+}
+@media (min-width: 992px) {
+  .entrees-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+  }
 }
 .entrees-content h1 {
   display: flex;
@@ -64,13 +80,23 @@ nav {
   -webkit-background-clip: text;
   color: transparent;
 }
+@media (min-width: 768px) {
+  .entrees-content .palette-favorite {
+    right: 35%;
+  }
+}
 .entrees-content .entrees {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 90px;
+  width: 74%;
   margin-left: 20px;
   padding-top: 30px;
+}
+@media (min-width: 992px) {
+  .entrees-content .entrees {
+    margin-bottom: 4px;
+  }
 }
 .entrees-content hr {
   width: 40px;
@@ -82,12 +108,25 @@ nav {
   border-color: #99E2D0;
   border-style: solid;
 }
+@media (min-width: 992px) {
+  .entrees-content hr {
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 12px;
+    margin-top: 2px;
+  }
+}
 .entrees-content .entrees-cards {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
+}
+@media (min-width: 992px) {
+  .entrees-content .entrees-cards {
+    width: 75%;
+  }
 }
 .entrees-content .entrees-cards .menu-card {
   width: 94%;
@@ -156,9 +195,17 @@ nav {
   padding-top: 50px;
   padding-bottom: 30px;
 }
+@media (min-width: 992px) {
+  .order-section {
+    width: 315px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+}
 .order-section .order {
   display: flex;
   height: 50px;
+  width: 200px;
   justify-content: center;
   align-items: center;
   background-color: #ff79da;
@@ -169,7 +216,9 @@ nav {
   border-radius: 30px;
   margin: 0 75px 50px 75px;
   background-image: linear-gradient(170deg, #ff79da, #9356DC);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.order-section .order:hover {
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .footer-section .page-name {
@@ -199,6 +248,15 @@ nav {
 }
 .footer-section .footer-link i {
   color: white;
+}
+@media (min-width: 992px) {
+  .footer-section .page-name {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    padding: 10px 25px 0 0;
+    margin: 20px 0 0 300px;
+  }
 }
 
 * {
@@ -278,7 +336,7 @@ header {
   border-radius: 30px;
   margin: 0 75px 50px 75px;
   background-image: linear-gradient(170deg, #ff79da, #9356DC);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 .structure {
@@ -314,7 +372,7 @@ header {
   margin: 0 30px;
   margin-top: -30px;
   padding-right: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 992px) {
   .structure .structure-three-sec .chose-restaurant {
@@ -356,7 +414,7 @@ header {
   margin: 0 30px;
   margin-top: -30px;
   padding-right: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 992px) {
   .structure .structure-three-sec .create-menu {
@@ -398,7 +456,7 @@ header {
   margin: 0 30px;
   margin-top: -30px;
   padding-right: 15px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 992px) {
   .structure .structure-three-sec .enjoy-it {
@@ -464,7 +522,7 @@ header {
   display: block;
   margin: 0 20px;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.1);
   position: relative;
   width: 320px;
   height: 200px;
@@ -775,7 +833,7 @@ header {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
-    right: 50px;
+    position: absolute;
     padding: 10px 25px 0 0;
     margin: 20px 0 0 300px;
   }

@@ -2,12 +2,19 @@
   color: $color-tertiary;
 }
 
+.entrees-back {
+  @media (min-width:992px) {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 nav {
   @include nav-pointer;
 
-  .pointer {
-    
-  }
+  .pointer {}
 }
 
 .palette-card img {
@@ -23,7 +30,15 @@ nav {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
   background-color: $color-gray;
-  margin-bottom: -10px;
+
+
+  @media (min-width:992px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+
+  }
 
   h1 {
     @include header-title;
@@ -35,19 +50,34 @@ nav {
     top: 280px;
     right: 40px;
     height: 0px;
+
+    @media (min-width:768px) {
+      right: 35%;
+    }
   }
 
   .entrees {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    width: 90px;
+    width: 74%;
     margin-left: 20px;
     padding-top: 30px;
+
+    @media (min-width:992px) {
+      margin-bottom: 4px;
+    }
   }
 
   hr {
     @include mini-line;
+
+    @media (min-width:992px) {
+      text-align: left;
+      margin-left: 100px;
+      margin-bottom: 12px;
+      margin-top: 2px;
+    }
   }
 
   .entrees-cards {
@@ -56,6 +86,10 @@ nav {
     align-items: center;
     flex-direction: column;
     gap: 20px;
+
+    @media(min-width:992px) {
+      width: 75%;
+    }
 
     .menu-card {
 
@@ -139,13 +173,34 @@ nav {
   padding-top: 50px;
   padding-bottom: 30px;
 
+  @media (min-width:992px) {
+    width: 315px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
   .order {
     @include order-button;
     background-image: linear-gradient(170deg, $color-secondary, $color-primary);
-    @include box-shadow();
+
+    &:hover {
+      @include box-shadow();
+    }
   }
+
 }
 
 .footer-section {
   @include footer-for-mobile;
+
+  @media (min-width:992px) {
+  
+      .page-name {
+        display: flex;
+        justify-content: end;
+        position: absolute;
+        padding: 10px 25px 0 0;
+        margin: 20px 0 0 300px;
+      }
+  }
 }

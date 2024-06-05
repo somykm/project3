@@ -1,6 +1,6 @@
 @mixin box-shadow {
   box-shadow:
-    5px 5px 5px rgba(0, 0, 0, 0.1);
+    6px 6px 6px rgba(0, 0, 0, 0.1);
 }
 
 @mixin numbers-border-info {
@@ -101,31 +101,6 @@
   }
 }
 
-////////icon for pages/////
-// @mixin check-sign {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 70px;
-//   height: 70px;
-//   border: 1px solid;
-//   border-style: none;
-//   background-color: $color-tertiary;
-//   border-top-right-radius: 20px;
-//   border-bottom-right-radius: 20px;
-
-//   .check-icon {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     border-radius: 20px;
-//     border: 1px solid;
-//     border-style: none;
-//     background-color: white;
-//     width: 20px;
-//     height: 20px;
-//   }
-// }
 @mixin nav-pointer{
   display: flexbox;
   top: 20px;
@@ -148,6 +123,7 @@
 @mixin order-button{
   display: flex;
     height: 50px;
+    width: 200px;
     justify-content: center;
     align-items: center;
     background-color: $color-secondary;
