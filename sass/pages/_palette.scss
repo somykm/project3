@@ -114,7 +114,6 @@ nav {
         .card-text {
           display: flex;
           flex-direction: column;
-
           height: 100%;
           flex: fit-content;
           padding: 10px 0 10px 10px;
@@ -125,6 +124,11 @@ nav {
 
           .ingridiant {
             margin-top: 8px;
+          
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 300px;
           }
         }
 

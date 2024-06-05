@@ -159,6 +159,10 @@ nav {
 }
 .entrees-content .entrees-cards .menu-card .card-content .card-text .ingridiant {
   margin-top: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 300px;
 }
 .entrees-content .entrees-cards .menu-card .card-content .btn-price {
   display: flex;
