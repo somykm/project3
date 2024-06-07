@@ -10,6 +10,14 @@
     align-items: center;
   }
 }
+@media (min-width: 768px) {
+  .entrees-back {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 nav {
   display: flexbox;
@@ -40,6 +48,14 @@ nav {
     justify-content: center;
     align-items: center;
     width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .entrees-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
   }
 }
 .entrees-content h1 {
@@ -92,13 +108,20 @@ nav {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  width: 74%;
-  margin-left: 28px;
+  width: 70%;
+  margin-left: 22px;
   padding-top: 30px;
 }
 @media (min-width: 992px) {
   .entrees-content .entrees {
     margin-bottom: 4px;
+    margin-left: -24px;
+  }
+}
+@media (min-width: 768px) {
+  .entrees-content .entrees {
+    margin-bottom: 4px;
+    margin-left: -60px;
   }
 }
 .entrees-content hr {
@@ -114,7 +137,15 @@ nav {
 @media (min-width: 992px) {
   .entrees-content hr {
     text-align: left;
-    margin-left: 15%;
+    margin-left: 11%;
+    margin-bottom: 12px;
+    margin-top: 2px;
+  }
+}
+@media (min-width: 768px) {
+  .entrees-content hr {
+    text-align: left;
+    margin-left: 11%;
     margin-bottom: 12px;
     margin-top: 2px;
   }
@@ -129,6 +160,11 @@ nav {
 @media (min-width: 992px) {
   .entrees-content .entrees-cards {
     width: 75%;
+  }
+}
+@media (min-width: 768px) {
+  .entrees-content .entrees-cards {
+    width: 85%;
   }
 }
 .entrees-content .entrees-cards .menu-card {
@@ -162,7 +198,14 @@ nav {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-  width: 300px;
+  width: 200px;
+}
+@media (min-width: 512px) {
+  .entrees-content .entrees-cards .menu-card .card-content .card-text .ingridiant {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: visible;
+  }
 }
 .entrees-content .entrees-cards .menu-card .card-content .btn-price {
   display: flex;
@@ -209,6 +252,12 @@ nav {
     padding-bottom: 0;
   }
 }
+@media (min-width: 768px) {
+  .order-section {
+    padding-top: 22px;
+    padding-bottom: 0;
+  }
+}
 .order-section .order {
   display: flex;
   height: 50px;
@@ -236,12 +285,20 @@ nav {
   color: white;
   padding: 10px 0 10px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
     right: 40px;
     padding: 25px 0 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer-section .page-name {
+    display: flex;
+    justify-content: end;
+    right: 400px;
+    padding: 2px 0 0 0;
   }
 }
 .footer-section .footer-text {
@@ -612,12 +669,20 @@ header {
   color: white;
   padding: 10px 0 10px 0;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
     right: 40px;
     padding: 25px 0 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .footer-section .page-name {
+    display: flex;
+    justify-content: end;
+    right: 400px;
+    padding: 2px 0 0 0;
   }
 }
 .footer-section .footer-text {
