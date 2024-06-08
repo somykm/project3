@@ -2,7 +2,7 @@
   box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.2);
 }
 @mixin background-color-order($color:$color-secondary){
-background-color: lighten($color: $color-secondary, $amount: 20%);
+background-image: lighten($color: $color-secondary, $amount: 20%);
 }
 
 @mixin numbers-border-info {
