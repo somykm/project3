@@ -237,7 +237,7 @@ nav a {
 
     &:hover {
       @include box-shadow();
-      @include color-order;
+      filter: brightness(115%);//make button brighter
     }
   }
 }

@@ -2,10 +2,6 @@
   box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
-@mixin color-order($color: $color-secondary) {
-  color: lighten($color: $color-secondary, $amount: 70%);
-}
-
 @mixin numbers-border-info {
   border: 1px solid;
   border-style: none;
@@ -141,7 +137,7 @@
   width: 200px;
   justify-content: center;
   align-items: center;
-  background-color: $color-secondary;
+  // background-color: $color-secondary;
   border: 0;
   font-size: 17px;
   text-align: center;

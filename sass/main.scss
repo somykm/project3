@@ -30,13 +30,9 @@ body {
     border-top: 16px solid #3498db;
     width: 120px;
     height: 120px;
-    animation: rotate-spiner $anim-dur linear infinite;
-    // @for $i from 1 through 5 {
-    //   &--#{$i}{
-    //     animation-delay: $anim-del*$i;
-    //   }
-    // }
-
+    animation: rotate-spiner 3s 1000ms linear infinite;
+    animation-iteration-count: 3;
+  
   }
 }
 
@@ -45,12 +41,10 @@ body {
 @keyframes rotate-spiner {
   0% {
     transform: rotate(0deg);
-    // transform: translateX(-9999px);
   }
 
   100% {
     transform: rotate(360deg);
-    // transform: translateX(0);
   }
 }
 
@@ -433,7 +427,7 @@ header {
       align-items: end;
       margin-top: 30px;
       height: 18px;
-      margin-right: 18px;
+      margin-right: 30px;
       position: absolute;
     }
   }
