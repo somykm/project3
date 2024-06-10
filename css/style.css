@@ -299,17 +299,12 @@ nav a {
 }
 @media (min-width: 992px) {
   .footer-section .page-name {
-    display: flex;
-    justify-content: end;
     right: 10px;
     padding: 2px 0 0 0;
   }
 }
 @media (min-width: 768px) {
   .footer-section .page-name {
-    display: flex;
-    justify-content: center;
-    align-items: end;
     right: 10px;
     padding: 2px 0 0 0;
   }
@@ -719,17 +714,12 @@ header {
 }
 @media (min-width: 992px) {
   .footer-section .page-name {
-    display: flex;
-    justify-content: end;
     right: 10px;
     padding: 2px 0 0 0;
   }
 }
 @media (min-width: 768px) {
   .footer-section .page-name {
-    display: flex;
-    justify-content: center;
-    align-items: end;
     right: 10px;
     padding: 2px 0 0 0;
   }
@@ -848,7 +838,7 @@ header {
     align-items: end;
     margin-top: 30px;
     height: 18px;
-    margin: 18px;
+    margin-right: 18px;
     position: absolute;
   }
 }
