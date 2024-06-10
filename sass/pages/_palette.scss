@@ -46,14 +46,14 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 76%;
   }
 
   @media (min-width:768px) {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 76%;
   }
 
   h1 {
@@ -84,12 +84,11 @@ nav a {
 
     @media (min-width:992px) {
       margin-bottom: 4px;
-      margin-left: -24px;
     }
 
     @media (min-width:768px) {
       margin-bottom: 4px;
-      margin-left: -60px;
+      margin-left: 35px;
     }
   }
 
@@ -98,14 +97,14 @@ nav a {
 
     @media (min-width:992px) {
       text-align: left;
-      margin-left: 11%;
+      margin-left: 17.5%;
       margin-bottom: 12px;
       margin-top: 2px;
     }
 
     @media (min-width:768px) {
       text-align: left;
-      margin-left: 11%;
+      margin-left: 17.5%;
       margin-bottom: 12px;
       margin-top: 2px;
     }
@@ -119,11 +118,11 @@ nav a {
     gap: 20px;
 
     @media(min-width:992px) {
-      width: 75%;
+      width: 70%;
     }
 
     @media(min-width:768px) {
-      width: 85%; //space around cards
+      width: 70%; //space around cards
     }
 
     .menu-card {

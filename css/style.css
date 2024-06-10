@@ -53,7 +53,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 76%;
   }
 }
 @media (min-width: 768px) {
@@ -61,7 +61,7 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 85%;
+    width: 76%;
   }
 }
 .entrees-content h1 {
@@ -123,13 +123,12 @@ nav a {
 @media (min-width: 992px) {
   .entrees-content .entrees {
     margin-bottom: 4px;
-    margin-left: -24px;
   }
 }
 @media (min-width: 768px) {
   .entrees-content .entrees {
     margin-bottom: 4px;
-    margin-left: -60px;
+    margin-left: 35px;
   }
 }
 .entrees-content hr {
@@ -145,7 +144,7 @@ nav a {
 @media (min-width: 992px) {
   .entrees-content hr {
     text-align: left;
-    margin-left: 11%;
+    margin-left: 17.5%;
     margin-bottom: 12px;
     margin-top: 2px;
   }
@@ -153,7 +152,7 @@ nav a {
 @media (min-width: 768px) {
   .entrees-content hr {
     text-align: left;
-    margin-left: 11%;
+    margin-left: 17.5%;
     margin-bottom: 12px;
     margin-top: 2px;
   }
@@ -167,12 +166,12 @@ nav a {
 }
 @media (min-width: 992px) {
   .entrees-content .entrees-cards {
-    width: 75%;
+    width: 70%;
   }
 }
 @media (min-width: 768px) {
   .entrees-content .entrees-cards {
-    width: 85%;
+    width: 70%;
   }
 }
 .entrees-content .entrees-cards .menu-card {
@@ -944,7 +943,7 @@ header {
     display: flex;
     justify-content: end;
     position: absolute;
-    padding: 10px 25px 0 0;
+    padding: 10px 40px 0 0;
     margin: 20px 0 0 300px;
   }
 }
