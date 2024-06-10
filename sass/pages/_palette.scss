@@ -42,7 +42,6 @@ nav a {
   border-top-right-radius: 40px;
   background-color: $color-gray;
 
-
   @media (min-width:992px) {
     display: flex;
     justify-content: center;
@@ -63,14 +62,15 @@ nav a {
 
   .palette-favorite {
     @include favorite-heart;
-    position: absolute;
-    top: 280px;
-    right: 40px;
     height: 0px;
 
     @media (min-width:768px) {
       right: 30%;
-      top: 266px;
+      top: 50px;
+    }
+
+    @media (min-width: 992px) {
+      right: 35%;
     }
   }
 
@@ -238,7 +238,7 @@ nav a {
 
     &:hover {
       @include box-shadow();
-      @include background-color-order;
+      @include color-order;
     }
   }
 }

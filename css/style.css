@@ -75,13 +75,11 @@ nav a {
   margin-bottom: -20px;
 }
 .entrees-content .palette-favorite {
-  right: 30px;
-  top: 30px;
+  position: absolute;
+  right: 50px;
+  top: 40px;
   padding: 0 8px 16px 0;
   height: 0px;
-  position: absolute;
-  top: 280px;
-  right: 40px;
   height: 0px;
 }
 .entrees-content .palette-favorite .empty-heart {
@@ -106,7 +104,12 @@ nav a {
 @media (min-width: 768px) {
   .entrees-content .palette-favorite {
     right: 30%;
-    top: 266px;
+    top: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .entrees-content .palette-favorite {
+    right: 35%;
   }
 }
 .entrees-content .entrees {
@@ -282,7 +285,7 @@ nav a {
 }
 .order-section .order:hover {
   box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.2);
-  background-image: #ffdff6;
+  color: white;
 }
 
 .footer-section .page-name {
@@ -298,15 +301,16 @@ nav a {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
-    right: 4px;
+    right: 10px;
     padding: 2px 0 0 0;
   }
 }
 @media (min-width: 768px) {
   .footer-section .page-name {
     display: flex;
-    justify-content: end;
-    margin-left: 300px;
+    justify-content: center;
+    align-items: end;
+    right: 10px;
     padding: 2px 0 0 0;
   }
 }
@@ -643,8 +647,9 @@ header {
   color: #278870;
 }
 .restaurant-section .restaurant-cards .card .favorite {
-  right: 30px;
-  top: 30px;
+  position: absolute;
+  right: 50px;
+  top: 40px;
   padding: 0 8px 16px 0;
   height: 0px;
 }
@@ -716,15 +721,16 @@ header {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
-    right: 4px;
+    right: 10px;
     padding: 2px 0 0 0;
   }
 }
 @media (min-width: 768px) {
   .footer-section .page-name {
     display: flex;
-    justify-content: end;
-    margin-left: 300px;
+    justify-content: center;
+    align-items: end;
+    right: 10px;
     padding: 2px 0 0 0;
   }
 }
@@ -840,9 +846,10 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: end;
-    margin-top: 20px;
+    margin-top: 30px;
     height: 18px;
     margin: 18px;
+    position: absolute;
   }
 }
 @media (min-width: 992px) {

@@ -2,8 +2,8 @@
   box-shadow: 0px 3px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
-@mixin background-color-order($color: $color-secondary) {
-  background-image: lighten($color: $color-secondary, $amount: 20%);
+@mixin color-order($color: $color-secondary) {
+  color: lighten($color: $color-secondary, $amount: 70%);
 }
 
 @mixin numbers-border-info {
@@ -53,14 +53,15 @@
     @media (min-width:992px) {
       display: flex;
       justify-content: end;
-      right: 4px;
+      right: 10px;
       padding: 2px 0 0 0;
     }
 
     @media (min-width:768px) {
       display: flex;
-      justify-content: end;
-      margin-left: 300px;
+      justify-content: center;
+      align-items: end;
+      right: 10px;
       padding: 2px 0 0 0;
     }
   }
@@ -90,9 +91,9 @@
 }
 
 @mixin favorite-heart {
-  // position: absolute;
-  right: 30px;
-  top: 30px;
+  position: absolute;
+  right: 50px;
+  top: 40px;
   padding: 0 8px 16px 0;
   height: 0px;
 
