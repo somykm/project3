@@ -75,9 +75,8 @@ nav a {
   margin-bottom: -20px;
 }
 .entrees-content .palette-favorite {
-  position: absolute;
   right: 30px;
-  bottom: 30px;
+  top: 30px;
   padding: 0 8px 16px 0;
   height: 0px;
   position: absolute;
@@ -293,20 +292,21 @@ nav a {
   font-weight: 700;
   color: white;
   padding: 10px 0 10px 0;
+  text-decoration: none;
 }
 @media (min-width: 992px) {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
-    right: 40px;
-    padding: 25px 0 0 0;
+    right: 4px;
+    padding: 2px 0 0 0;
   }
 }
 @media (min-width: 768px) {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
-    right: 400px;
+    margin-left: 300px;
     padding: 2px 0 0 0;
   }
 }
@@ -314,12 +314,19 @@ nav a {
   color: white;
   font-size: 14px;
   white-space: nowrap;
+  text-decoration: none;
+}
+.footer-section button {
+  background-color: #333333;
+  border-style: none;
+  margin-left: -7px;
 }
 .footer-section .footer-icon ::before {
-  width: 18px;
+  width: 20px;
   height: 18px;
 }
-.footer-section .footer-link i {
+.footer-section .footer-link i,
+.footer-section a {
   color: white;
 }
 
@@ -364,6 +371,7 @@ header {
   height: 62.5px;
   position: relative;
   z-index: 10;
+  background-color: white;
 }
 
 .logo {
@@ -635,9 +643,8 @@ header {
   color: #278870;
 }
 .restaurant-section .restaurant-cards .card .favorite {
-  position: absolute;
   right: 30px;
-  bottom: 30px;
+  top: 30px;
   padding: 0 8px 16px 0;
   height: 0px;
 }
@@ -703,20 +710,21 @@ header {
   font-weight: 700;
   color: white;
   padding: 10px 0 10px 0;
+  text-decoration: none;
 }
 @media (min-width: 992px) {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
-    right: 40px;
-    padding: 25px 0 0 0;
+    right: 4px;
+    padding: 2px 0 0 0;
   }
 }
 @media (min-width: 768px) {
   .footer-section .page-name {
     display: flex;
     justify-content: end;
-    right: 400px;
+    margin-left: 300px;
     padding: 2px 0 0 0;
   }
 }
@@ -724,12 +732,19 @@ header {
   color: white;
   font-size: 14px;
   white-space: nowrap;
+  text-decoration: none;
+}
+.footer-section button {
+  background-color: #333333;
+  border-style: none;
+  margin-left: -7px;
 }
 .footer-section .footer-icon ::before {
-  width: 18px;
+  width: 20px;
   height: 18px;
 }
-.footer-section .footer-link i {
+.footer-section .footer-link i,
+.footer-section a {
   color: white;
 }
 
