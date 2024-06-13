@@ -21,10 +21,11 @@ body {
   width: 100vw;
   height: 100vh;
   position: fixed;
+  z-index: 10000;
   // TODO ADD KEYFRAME ANIMATION TO SCALE 0 WIDTH DELAY
+  animation: hide-spinner 0s 3s forwards;
 
   .spin {
-
     border: 16px solid #f3f3f3;
     border-radius: 50%;
     border-top: 16px solid #3498db;
@@ -32,11 +33,10 @@ body {
     height: 120px;
     animation: rotate-spiner 3s 1000ms linear infinite;
     animation-iteration-count: 3;
-  
+    
   }
+
 }
-
-
 
 @keyframes rotate-spiner {
   0% {
@@ -45,6 +45,12 @@ body {
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes hide-spinner {
+  100% {
+    transform: scale(0);
   }
 }
 
