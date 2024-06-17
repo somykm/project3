@@ -128,7 +128,7 @@ nav a {
 @media (min-width: 768px) {
   .entrees-content .entrees {
     margin-bottom: 4px;
-    margin-left: 35px;
+    margin-left: 40px;
   }
 }
 .entrees-content hr {
@@ -215,13 +215,25 @@ nav a {
 }
 .entrees-content .entrees-cards .menu-card .card-content .card-text .ingridiant {
   margin-top: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 230px;
+}
+@media (min-width: 992px) {
+  .entrees-content .entrees-cards .menu-card .card-content .card-text .ingridiant {
+    text-overflow: none;
+    white-space: wrap;
+    overflow: none;
+    width: 100%;
+  }
 }
 .entrees-content .entrees-cards .menu-card .card-content .btn-price {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  width: 70px;
+  width: 55px;
   height: 100%;
 }
 .entrees-content .entrees-cards .menu-card .card-content .btn-price .price {
