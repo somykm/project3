@@ -33,9 +33,7 @@ body {
     height: 120px;
     animation: rotate-spiner 3s 1000ms linear infinite;
     animation-iteration-count: 3;
-    
   }
-
 }
 
 @keyframes rotate-spiner {
@@ -126,7 +124,7 @@ header {
     border-radius: 30px;
     margin: 0 75px 50px 75px;
     background-image: linear-gradient(170deg, $color-secondary, $color-primary);
-    
+
     &:hover {
       @include box-shadow();
       filter: brightness(115%); //make button brighter
