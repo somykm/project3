@@ -31,7 +31,7 @@ nav a {
 .palette-card img {
   display: flex;
   width: 100%;
-  height: 180px;
+  height: 245px;
   object-fit: cover;
 }
 
@@ -172,13 +172,15 @@ nav a {
 
           .ingridiant {
             margin-top: 8px;
+            //to display the text all in one line
+            //and hide the long text and display dots instead (...)
             text-overflow: ellipsis;
             white-space: nowrap;
             overflow: hidden;
             width: 230px;
 
             @media(min-width:992px ) {
-              text-overflow:none;
+              text-overflow:unset;
               white-space: wrap;
               overflow:none;
               width: 100%;
