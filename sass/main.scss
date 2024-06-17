@@ -280,6 +280,8 @@ header {
 
       .favorite {
         @include favorite-heart;
+        right: 30px;
+        top: 150px;
       }
     }
 
