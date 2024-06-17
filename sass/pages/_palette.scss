@@ -196,6 +196,13 @@ nav a {
           width: 55px;
           height: 100%;
 
+          transform: scale(1);
+          transition: transform 200ms;
+
+          &:hover{
+            transform: scale(1.25);
+          }
+        
           .price {
             font-weight: bold;
             padding-bottom: 10px;
