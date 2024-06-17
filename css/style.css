@@ -23,7 +23,6 @@
 }
 
 nav {
-  display: flexbox;
   top: 20px;
   bottom: 20px;
   left: 30px;
@@ -227,7 +226,7 @@ nav a {
   .entrees-content .entrees-cards .menu-card .card-content .card-text .ingridiant {
     text-overflow: unset;
     white-space: wrap;
-    overflow: none;
+    overflow: hidden;
     width: 100%;
   }
 }
