@@ -126,7 +126,11 @@ header {
     border-radius: 30px;
     margin: 0 75px 50px 75px;
     background-image: linear-gradient(170deg, $color-secondary, $color-primary);
-    @include box-shadow();
+    
+    &:hover {
+      @include box-shadow();
+      filter: brightness(115%); //make button brighter
+    }
   }
 }
 
